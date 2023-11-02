@@ -121,7 +121,7 @@ body > div:nth-child(2) {
 }
 
 .login_modal .modal_body .login_wrapper #login_form #submit_login {
-  color: #fff;
+  color: #1a1a1a;
   font-size: 16px;
   background-color: #ffe286;
   margin-top: 20px;
@@ -220,7 +220,8 @@ body > div:nth-child(2) {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  color: white;
+  color: #2c2c2c;
+  font-weight: bolder;
   border-radius: 7px;
 }
 
