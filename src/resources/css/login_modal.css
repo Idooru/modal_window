@@ -83,10 +83,6 @@
   background-color: #ffe286;
 }
 
-.input_area:focus::placeholder {
-  color: white;
-}
-
 .login_modal .modal_body .login_wrapper #login_form #save_id {
   font-size: 13px;
   color: #575656;
