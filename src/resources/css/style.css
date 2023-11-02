@@ -215,19 +215,22 @@ body > div:nth-child(2) {
   transform: translate(-50%, -50%);
 }
 
-.login_modal .modal_body .social_login div {
+.login_modal .modal_body .social_login button {
   width: 320px;
-  height: 50px;
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
   color: #2c2c2c;
   font-weight: bolder;
+  font-size: 14px;
   border-radius: 7px;
+  border: none;
+  outline: none;
 }
 
-.login_modal .modal_body .social_login div:hover {
+.login_modal .modal_body .social_login button:hover {
   cursor: pointer;
 }
 
