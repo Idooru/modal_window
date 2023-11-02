@@ -51,7 +51,7 @@ body > div:nth-child(2) {
   z-index: 999;
 }
 
-.modal_window {
+.login_modal {
   opacity: 1;
   width: 450px;
   height: 700px;
@@ -64,7 +64,7 @@ body > div:nth-child(2) {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.modal_window .modal_head {
+.login_modal .modal_head {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ body > div:nth-child(2) {
   word-spacing: 5px;
 }
 
-.modal_window .modal_head button {
+.login_modal .modal_head button {
   background-color: black;
   position: absolute;
   top: 0;
@@ -86,16 +86,16 @@ body > div:nth-child(2) {
   border-radius: 0 20px 0 0;
 }
 
-.modal_window .modal_head button:hover {
+.login_modal .modal_head button:hover {
   cursor: pointer;
   color: red;
 }
 
-.modal_window .modal_body {
+.login_modal .modal_body {
   height: 580px;
 }
 
-.modal_window .modal_body .login_wrapper {
+.login_modal .modal_body .login_wrapper {
   width: 400px;
   height: 250px;
   padding: 40px 40px 0 40px;
@@ -106,7 +106,7 @@ body > div:nth-child(2) {
   transform: translate(-50%, -50%);
 }
 
-.modal_window .modal_body .login_wrapper #login_form > input {
+.login_modal .modal_body .login_wrapper #login_form > input {
   width: 100%;
   height: 48px;
   padding: 0 10px;
@@ -116,11 +116,11 @@ body > div:nth-child(2) {
   background-color: #f8f8f8;
 }
 
-.modal_window .modal_body .login_wrapper #login_form > input::placeholder {
+.login_modal .modal_body .login_wrapper #login_form > input::placeholder {
   color: #d2d2d2;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #submit_login {
+.login_modal .modal_body .login_wrapper #login_form #submit_login {
   color: #fff;
   font-size: 16px;
   background-color: #ffe286;
@@ -129,21 +129,21 @@ body > div:nth-child(2) {
   outline: none;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #submit_login:hover {
+.login_modal .modal_body .login_wrapper #login_form #submit_login:hover {
   color: #ffe286;
   background-color: darkgray;
   cursor: pointer;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #remember-check {
+.login_modal .modal_body .login_wrapper #login_form #remember-check {
   outline: none;
 }
 
-.modal_window .modal_body .login_wrapper #login_form > label {
+.login_modal .modal_body .login_wrapper #login_form > label {
   color: #999999;
 }
 
-.modal_window .modal_body .login_wrapper #login_form .input_area {
+.login_modal .modal_body .login_wrapper #login_form .input_area {
   width: 320px;
   height: 40px;
   padding-left: 10px;
@@ -154,11 +154,11 @@ body > div:nth-child(2) {
   border-radius: 5px;
 }
 
-.modal_window .modal_body .login_wrapper #login_form .input_area::placeholder {
+.login_modal .modal_body .login_wrapper #login_form .input_area::placeholder {
   color: #111105;
 }
 
-.modal_window .modal_body .login_wrapper #login_form .input_area:focus {
+.login_modal .modal_body .login_wrapper #login_form .input_area:focus {
   background-color: #ffe286;
 }
 
@@ -166,24 +166,24 @@ body > div:nth-child(2) {
   color: white;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #save_id {
+.login_modal .modal_body .login_wrapper #login_form #save_id {
   font-size: 13px;
   color: #575656;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #save_id:hover {
+.login_modal .modal_body .login_wrapper #login_form #save_id:hover {
   color: black;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #save_id > label {
+.login_modal .modal_body .login_wrapper #login_form #save_id > label {
   display: flex;
 }
 
-.modal_window .modal_body .login_wrapper #login_form #save_id > label span {
+.login_modal .modal_body .login_wrapper #login_form #save_id > label span {
   margin-left: 5px;
 }
 
-.modal_window .modal_body .user_option {
+.login_modal .modal_body .user_option {
   position: absolute;
   top: 54%;
   left: 50%;
@@ -195,25 +195,25 @@ body > div:nth-child(2) {
   align-items: center;
 }
 
-.modal_window .modal_body .user_option span {
+.login_modal .modal_body .user_option span {
   font-size: 13px;
   color: #575656;
 }
 
-.modal_window .modal_body .user_option span:hover {
+.login_modal .modal_body .user_option span:hover {
   cursor: pointer;
   text-decoration: underline;
   color: black;
 }
 
-.modal_window .modal_body .social_login {
+.login_modal .modal_body .social_login {
   position: absolute;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.modal_window .modal_body .social_login div {
+.login_modal .modal_body .social_login div {
   width: 320px;
   height: 50px;
   display: flex;
@@ -224,19 +224,19 @@ body > div:nth-child(2) {
   border-radius: 7px;
 }
 
-.modal_window .modal_body .social_login div:hover {
+.login_modal .modal_body .social_login div:hover {
   cursor: pointer;
 }
 
-.modal_window .modal_body .social_login #naver_login {
+.login_modal .modal_body .social_login #naver_login {
   background-color: #7bde3f;
 }
 
-.modal_window .modal_body .social_login #kakao_login {
+.login_modal .modal_body .social_login #kakao_login {
   background-color: #ffe34e;
 }
 
-.modal_window .modal_footer {
+.login_modal .modal_footer {
   height: 40px;
   background: #ffe286;
   border-radius: 0 0 20px 20px;
