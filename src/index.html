@@ -14,7 +14,12 @@
     ></script>
     <script
       defer
-      src="./resources/js/event/register-button.mjs"
+      src="./resources/js/event/register-page-button.mjs"
+      type="module"
+    ></script>
+    <script
+      defer
+      src="./resources/js/event/register-submit-button.mjs"
       type="module"
     ></script>
   </head>
@@ -145,16 +150,16 @@
       <div class="login_modal">
         <div class="modal_head">
           <h1>Log In</h1>
-          <button>X</button>
+          <button class="close_button">X</button>
         </div>
         <div class="modal_body">
           <div class="login_wrapper">
-            <form method="post" action="https://www.naver.com" id="login_form">
+            <form method="post" action="" id="login_form">
               <label>
                 <input
                   class="input_area"
                   type="text"
-                  name="userName"
+                  name="userEmail"
                   placeholder="Email"
                 />
               </label>
@@ -186,7 +191,93 @@
         </div>
         <div class="modal_footer"></div>
       </div>
-      <div class="register_modal">ads</div>
+      <div class="register_modal">
+        <div class="modal_head">
+          <h1>Register</h1>
+          <button class="close_button">X</button>
+        </div>
+        <div class="modal_body">
+          <div class="register_wrapper">
+            <form method="post" action="" id="register_form">
+              <table>
+                <tr>
+                  <td>
+                    <div class="key">이메일</div>
+                    <label>
+                      <input
+                        class="input_area"
+                        type="text"
+                        name="userEmail"
+                        placeholder="email"
+                      />
+                    </label>
+                    <div class="option_button">
+                      <button>중복 확인</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key">비밀번호</div>
+                    <label>
+                      <input
+                        class="input_area"
+                        type="password"
+                        name="userPassword"
+                        placeholder="password"
+                      />
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key">비밀번호 확인</div>
+                    <label>
+                      <input
+                        class="input_area"
+                        type="password"
+                        name="userPasswordConfirm"
+                        placeholder="password confirm"
+                      />
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key">이름</div>
+                    <label>
+                      <input
+                        class="input_area"
+                        type="text"
+                        name="userName"
+                        placeholder="name"
+                      />
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="key">주소</div>
+                    <label>
+                      <input
+                        class="input_area"
+                        type="text"
+                        name="userAddress"
+                        placeholder="address"
+                      />
+                    </label>
+                    <div class="option_button">
+                      <button>내 위치</button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <input id="submit_register" type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+        <div class="modal_footer"></div>
+      </div>
     </div>
   </body>
 </html>
