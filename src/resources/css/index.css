@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*화면을 어둡게 해주기*/
 .modal_cover {
   position: fixed;
   width: 100%;
