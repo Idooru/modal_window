@@ -7,7 +7,7 @@ body > div:nth-child(2) {
   font-size: 30px;
 }
 
-.modal_button {
+.login_modal_button {
   width: 800px;
   height: 500px;
   margin: 0 auto;
@@ -17,7 +17,7 @@ body > div:nth-child(2) {
   align-items: center;
 }
 
-.modal_button button {
+.login_modal_button button {
   border: 4px solid orange;
   background: white;
   padding: 10px;
@@ -27,7 +27,7 @@ body > div:nth-child(2) {
   border-radius: 10px;
 }
 
-.modal_button button:hover {
+.login_modal_button button:hover {
   background: #fdf97e;
   cursor: pointer;
 }

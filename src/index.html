@@ -9,22 +9,12 @@
     <link rel="stylesheet" href="./resources/css/register_modal.css" />
     <script
       defer
-      src="./resources/js/event/page-init.mjs"
-      type="module"
-    ></script>
-    <script
-      defer
-      src="./resources/js/event/register-page-button.mjs"
-      type="module"
-    ></script>
-    <script
-      defer
-      src="./resources/js/event/register-submit-button.mjs"
+      src="./resources/js/event/init/page-init.mjs"
       type="module"
     ></script>
   </head>
   <body>
-    <div class="modal_button">
+    <div class="login_modal_button">
       <button>모달 창</button>
     </div>
     <div>
@@ -212,7 +202,7 @@
                       />
                     </label>
                     <div class="option_button">
-                      <button>중복 확인</button>
+                      <button id="email_validate">중복 확인</button>
                     </div>
                   </td>
                 </tr>
@@ -267,7 +257,7 @@
                       />
                     </label>
                     <div class="option_button">
-                      <button>내 위치</button>
+                      <button id="my_location">내 위치</button>
                     </div>
                   </td>
                 </tr>
@@ -279,5 +269,6 @@
         <div class="modal_footer"></div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>

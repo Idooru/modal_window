@@ -86,8 +86,8 @@
 .register_modal .modal_body .register_wrapper #register_form #submit_register {
   width: 405px;
   height: 50px;
-  background-color: #ffedc7;
-  color: #ff8a00;
+  background-color: #ffe286;
+  color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +96,12 @@
   outline: none;
 }
 
-#register_form #submit_register:hover {
-  background-color: #ff8a00;
-  color: #ffedc7;
+.register_modal
+  > .modal_body
+  > .register_wrapper
+  > #register_form
+  > #submit_register:hover {
+  color: #ffe286;
+  background-color: darkgray;
   cursor: pointer;
 }
