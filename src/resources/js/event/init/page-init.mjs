@@ -1,9 +1,9 @@
 import { buttonEventInit } from "./button-event-init.mjs";
-import { loginInputKeyup } from "../keyup/login-input-keyup.mjs";
+import { keyupEventInit } from "./keyup-event-init.mjs";
 
 const pageInit = () => {
   buttonEventInit();
-  loginInputKeyup();
+  keyupEventInit();
 };
 
 window.addEventListener("load", pageInit);
