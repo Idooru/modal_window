@@ -1,4 +1,4 @@
-import { validateEmail } from "../../backend/validate-email.mjs";
+import { callValidateEmailApi } from "../../backend/call-validate-email-api.mjs";
 
 export const emailValidateButton = () => {
   const emailValidateButtonEle = document.querySelector("#email_validate");
@@ -8,8 +8,17 @@ export const emailValidateButton = () => {
 
     const email = document.querySelector("#register_email").value;
 
-    validateEmail(email)
-      .then((res) => console.log(res))
-      .catch((err) => console.error(err));
+    if (!email) return alert("이메일을 입력해주세요!")
+
+    callValidateEmailApi(email)
+      .then((res) => {
+        alert("사용가능한 이메일입니다!")
+      })
+      .catch((err) => {
+        alert("중복된 이메일입니다..")
+        const registerEmailEle = document.querySelector("#register_email");
+        registerEmailEle.value = "";
+      })
   });
 };
+
