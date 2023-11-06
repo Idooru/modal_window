@@ -42,10 +42,6 @@
   border: 2px solid #ffe286;
 }
 
-.register_modal .modal_body .register_wrapper #register_form td:focus {
-  border: 2px solid black;
-}
-
 .register_modal .modal_body .register_wrapper #register_form td .key {
   display: flex;
   width: 100px;
@@ -54,6 +50,7 @@
   font-weight: bolder;
   align-items: center;
   background-color: #ffe286;
+  border-radius: 5px 0 0 5px;
 }
 
 .register_modal .modal_body .register_wrapper #register_form td .input_area {
