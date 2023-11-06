@@ -1,14 +1,11 @@
-import { validateLoginEmailInput, validateLoginPasswordInput } from "../../logic/validate-login-input.mjs";
+import { loginEmailInputEle } from "../../elements/login-email-input-ele.mjs";
+import { loginPasswordInputEle } from "../../elements/login-password-input-ele.mjs";
+import { validateInputLength } from "../../logic/validate-input-length.mjs";
 
 export const loginInputKeyup = () => {
-  const emailInputEle = document.querySelector(
-    "#login_form label:nth-child(1) input",
+  loginEmailInputEle.addEventListener("keyup", validateInputLength.loginEmail);
+  loginPasswordInputEle.addEventListener(
+    "keyup",
+    validateInputLength.loginPassword,
   );
-
-  const passwordInputEle = document.querySelector(
-    "#login_form label:nth-child(2) input",
-  );
-
-  emailInputEle.addEventListener("keyup", validateLoginEmailInput);
-  passwordInputEle.addEventListener("keyup", validateLoginPasswordInput);
 };
