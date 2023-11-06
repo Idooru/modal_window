@@ -5,12 +5,15 @@ import {
   registerPasswordConfirmInputEle,
   registerPasswordInputEle,
 } from "../elements/register-password-input-ele.mjs";
+import { registerNameInputEle } from "../elements/register-name-input-ele.mjs";
 
 const emailWarn = "이메일 입력 범위를 초과하였습니다.";
 const passwordWarn = "비밀번호 입력 범위를 초과하였습니다.";
+const nameWarn = "이름 입력 범위를 초과하였습니다.";
 
 const maxEmailLength = 28;
 const maxPasswordLength = 35;
+const maxNameLength = 4;
 
 export const validateInputLength = {
   loginEmail() {
@@ -41,6 +44,12 @@ export const validateInputLength = {
     if (registerPasswordConfirmInputEle.value.length > maxPasswordLength) {
       alert(passwordWarn);
       registerPasswordConfirmInputEle.value = "";
+    }
+  },
+  registerName() {
+    if (registerNameInputEle.value.length > maxNameLength) {
+      alert(nameWarn);
+      registerNameInputEle.value = "";
     }
   },
 };
