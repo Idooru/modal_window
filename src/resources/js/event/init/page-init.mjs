@@ -1,9 +1,9 @@
 import { buttonEventInit } from "./button-event-init.mjs";
-import { validateInputLength } from "../etc/validate-input-length.mjs";
+import { loginInputKeyup } from "../keyup/login-input-keyup.mjs";
 
 const pageInit = () => {
   buttonEventInit();
-  validateInputLength();
+  loginInputKeyup();
 };
 
 window.addEventListener("load", pageInit);
