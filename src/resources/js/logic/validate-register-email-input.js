@@ -1,6 +1,6 @@
 import { registerEmailInputEle } from "../elements/register-email-input-ele.mjs";
 
-export const validateEmailInput = (email) => {
+export const validateRegisterEmailInput = (email) => {
   if (!email) {
     alert("이메일을 입력해주세요!");
     return false;

@@ -1,6 +1,6 @@
 import { callValidateEmailApi } from "../../backend/call-validate-email-api.mjs";
 import { registerEmailInputEle } from "../../elements/register-email-input-ele.mjs";
-import { validateEmailInput } from "../../logic/validate-email-input.js";
+import { validateRegisterEmailInput } from "../../logic/validate-register-email-input.js";
 
 export const emailValidateButton = () => {
   const emailValidateButtonEle = document.querySelector("#email_validate");
@@ -9,7 +9,7 @@ export const emailValidateButton = () => {
     e.preventDefault();
 
     const email = registerEmailInputEle.value;
-    const result= validateEmailInput(email)
+    const result= validateRegisterEmailInput(email)
 
     if (!result) return
 
