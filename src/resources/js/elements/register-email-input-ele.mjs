@@ -1,0 +1,1 @@
+export const registerEmailInputEle = document.querySelector("#register_email");
