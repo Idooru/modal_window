@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>모달 창 페이지</title>
-    <link rel="stylesheet" href="./resources/css/index.css" />
-    <link rel="stylesheet" href="./resources/css/body.css" />
-    <link rel="stylesheet" href="./resources/css/login_modal.css" />
-    <link rel="stylesheet" href="./resources/css/register_modal.css" />
+    <link href="./resources/css/index.css" rel="stylesheet" />
+    <link href="./resources/css/body.css" rel="stylesheet" />
+    <link href="./resources/css/login_modal.css" rel="stylesheet" />
+    <link href="./resources/css/register_modal.css" rel="stylesheet" />
     <script
       defer
       src="./resources/js/event/init/page-init.mjs"
@@ -144,28 +144,29 @@
         </div>
         <div class="modal_body">
           <div class="login_wrapper">
-            <form method="post" action="" id="login_form">
+            <form action="" id="login_form" method="post">
               <label>
                 <input
-                  id="login_email"
+                  autocomplete="off"
                   class="input_area"
-                  type="text"
+                  id="login_email"
                   name="userEmail"
                   placeholder="Email"
+                  type="text"
                 />
               </label>
               <label>
                 <input
-                  id="login_password"
                   class="input_area"
-                  type="password"
+                  id="login_password"
                   name="userPassword"
                   placeholder="Password"
+                  type="password"
                 />
               </label>
               <div id="save_id">
                 <label for="remember-check">
-                  <input type="checkbox" id="remember-check" />
+                  <input id="remember-check" type="checkbox" />
                   <span>아이디 저장하기 </span>
                 </label>
               </div>
@@ -190,18 +191,19 @@
         </div>
         <div class="modal_body">
           <div class="register_wrapper">
-            <form method="post" action="" id="register_form">
+            <form action="" id="register_form" method="post">
               <table>
                 <tr>
                   <td>
                     <div class="key">이메일</div>
                     <label>
                       <input
-                        id="register_email"
+                        autocomplete="off"
                         class="input_area"
-                        type="text"
+                        id="register_email"
                         name="userEmail"
                         placeholder="email"
+                        type="text"
                       />
                     </label>
                     <div class="option_button">
@@ -214,11 +216,11 @@
                     <div class="key">비밀번호</div>
                     <label>
                       <input
-                        id="register_password"
                         class="input_area"
-                        type="password"
+                        id="register_password"
                         name="userPassword"
                         placeholder="password"
+                        type="password"
                       />
                     </label>
                   </td>
@@ -228,11 +230,11 @@
                     <div class="key">비밀번호 확인</div>
                     <label>
                       <input
-                        id="register_password_confirm"
                         class="input_area"
-                        type="password"
+                        id="register_password_confirm"
                         name="userPasswordConfirm"
                         placeholder="password confirm"
+                        type="password"
                       />
                     </label>
                   </td>
@@ -242,11 +244,12 @@
                     <div class="key">이름</div>
                     <label>
                       <input
-                        id="register_name"
+                        autocomplete="off"
                         class="input_area"
-                        type="text"
+                        id="register_name"
                         name="userName"
                         placeholder="name"
+                        type="text"
                       />
                     </label>
                   </td>
@@ -256,11 +259,12 @@
                     <div class="key">주소</div>
                     <label>
                       <input
-                        id="register_address"
+                        autocomplete="off"
                         class="input_area"
-                        type="text"
+                        id="register_address"
                         name="userAddress"
                         placeholder="address"
+                        type="text"
                       />
                     </label>
                     <div class="option_button">
