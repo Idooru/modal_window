@@ -1,4 +1,6 @@
 import { callValidateEmailApi } from "../../backend/call-validate-email-api.mjs";
+import { registerEmailInputEle } from "../../elements/register-email-input-ele.mjs";
+import { validateEmailInput } from "../../logic/validate-email-input.js";
 
 export const emailValidateButton = () => {
   const emailValidateButtonEle = document.querySelector("#email_validate");
@@ -6,18 +8,18 @@ export const emailValidateButton = () => {
   emailValidateButtonEle.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    const email = document.querySelector("#register_email").value;
+    const email = registerEmailInputEle.value;
+    const result= validateEmailInput(email)
 
-    if (!email) return alert("이메일을 입력해주세요!")
+    if (!result) return
 
     callValidateEmailApi(email)
-      .then((res) => {
+      .then(() => {
         alert("사용가능한 이메일입니다!")
       })
-      .catch((err) => {
+      .catch(() => {
         alert("중복된 이메일입니다..")
-        const registerEmailEle = document.querySelector("#register_email");
-        registerEmailEle.value = "";
+        registerEmailInputEle.value = "";
       })
   });
 };
